@@ -51,7 +51,7 @@ app.get('/character/:characterId', async (req, res) => {
 
 app.get('/comics', async (req, res) => {
   try {
-    const name = req.query.name || ' ';
+    const name = req.query.name || '';
     const skip = req.query.skip || 0;
     const limit = req.query.limit || 100;
 
