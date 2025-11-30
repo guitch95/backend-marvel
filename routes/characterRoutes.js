@@ -5,6 +5,8 @@ import cors from 'cors';
 
 const router = Router();
 
+const API_KEY = process.env.API_KEY;
+
 router.get('/characters', async (req, res) => {
   try {
     const name = req.query.name || '';
@@ -35,3 +37,5 @@ router.get('/character/:characterId', async (req, res) => {
     res.status(500).json({message: error.message});
   }
 });
+
+export default router;
