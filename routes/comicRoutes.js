@@ -1,6 +1,7 @@
 import express from 'express';
 import {Router} from 'express';
 import axios from 'axios';
+import cors from 'cors';
 
 const router = Router();
 
